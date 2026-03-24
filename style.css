@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #fff5f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* 全屏居中容器 */
+.container {
+    text-align: center;
+}
+
+/* 渐变文字 */
+.gradient-text {
+    font-size: 50px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff5e97, #ff94c2, #ff70b0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 40px;
+}
+
+/* 按钮样式 */
+#loveBtn {
+    padding: 18px 40px;
+    font-size: 20px;
+    background: linear-gradient(90deg, #ff7ab6, #ff4b8f);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 94, 151, 0.3);
+    transition: 0.3s;
+}
+
+#loveBtn:hover {
+    transform: scale(1.08);
+}
+
+/* 爱心样式 */
+.heart {
+    position: absolute;
+    color: #ff5e97;
+    font-size: 20px;
+    pointer-events: none;
+    animation: fly 1.5s linear forwards;
+}
+
+@keyframes fly {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-700px) scale(1.5);
+        opacity: 0;
+    }
+}
